@@ -1,12 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chetan Vegad - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" href="content/favicon.ico">
+
+    <style>
+        .x {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        /* Custom styles for different sections */
+        section {
+            padding: 80px 0;
+        }
+
+        .section-heading {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 40px;
+        }
+
+        .profile-image {
+            height: 200px;
+            width: auto;
+        }
+
+        .portfolio-item {
+            transition: all 0.3s ease-in-out;
+        }
+
+        .portfolio-item:hover {
+            transform: scale(1.05);
+        }
+
+        .contact-form {
+            max-width: 500px;
+            margin: auto;
+        }
+    </style>
 </head>
+
 <body>
-  <h1>Chetan Vegad</h1>
-  
-</body>
-</html>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container-fluid"> 
+            <a class="navbar-brand" href="https://chetan007-cell.github.io/Portfolio/" style="font-size: xx-large;">Chetan Vegad</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Profiles
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="https://www.linkedin.com/in/chetan-vegad-19ab731b7/">LinkedIn</a></li>
+                          <li><a class="dropdown-item" href="https://github.com/Chetan007-cell">Github</a></li>
+                          <li><a class="dropdown-item" href="https://leetcode.com/Chetan_007/">Leetcode</a></li>
+                          <li><a class="dropdown-item" href="https://www.hackerrank.com/chetanvegad07?hr_r=1">HackerRank</a></li>
+                          <li><a class="dropdown-item" href="https://auth.geeksforgeeks.org/user/chetanvegad07/?utm_source=geeksforgeeks&utm_medium=my_profile&utm_campaign=auth_user">GeeksforGeeks</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Me Section -->
+    <section id="about" class="bg-light" style="padding: 16%;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="content/chetan.jpg" alt="Chetan Vegad" class="profile-image img-fluid rounded-circle">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="section-heading">About Me</h2>
+                    <p class="x">
+                        Hello! I am Chetan Vegad, a passionate web developer with a keen interest in computer graphics. I
+                        love to
+                        design and build interactive websites that deliver a great user experience. My journey in the world
+                        of
+                        coding began with solving algorithmic problems on platforms like LeetCode and HackerRank. I am
+                        always
+                        eager to learn and explore new technologies to stay up-to-date with the latest trends in web
+                        development.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <div class="container">
+            <h2 class="section-heading">Projects</h2>
+            <div class="row">
+                <div class="card col-md-4">
+                    <img src="content/dice1.jpg" class="img-thumbnail" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Cryptocurrency App</h5>
+                      <p class="card-text">This app Updates you about the current price of various 
+                        cryptocurrencies around the world in a single click.I made this using React,
+                         API, Bootstrap.
+                        </p>
+                      <a href="#" class="btn btn-primary">Visit</a>
+                    </div>
+                  </div>
+
+                  <div class="card col-md-4" >
+                    <img src="content/Project2.png" class="img-thumbnail" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Dice Game</h5>
+                      <p class="card-text">Simple but interactive Game made with HTML,CSS and JAVA SCRIPT.
+                        Two players can play with each other and whoever comes out with greater number
+                        wins the game.
+                      </p>
+                      <a href="#" class="btn btn-primary">Visit</a>
+                    </div>
+                  </div>
+
+                  <div class="card col-md-4" >
+                    <img src="content/project3.png" class="img-thumbnail" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">CG Artwork</h5>
+                      <p class="card-text">This is my Computer Graphics Artwork. I created various 3D images 
+                        and video Animation using Blender.
+                      </p>
+                      <a href="#" class="btn btn-primary">Visit</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </section>
+        
+    <footer class="bg-dark text-light py-4" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4>Contact Me</h4>
+                        <ul class="list-inline">
+                            <li>Ph: +91 9334794110</li>
+                            <li>Mail: chetanvegad07@gmail.com</li>
+                            <!-- Add more contact information if needed -->
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h4>Follow Me</h4>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="#" target="_blank" class="text-light">Facebook</a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" class="text-light">Twitter</a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" class="text-light">Instagram</a>
+                            </li>
+                            <!-- Add more social media links here -->
+                        </ul>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col text-center">
+                        <p>&copy; 2023 Chetan Vegad. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    </body>
+
+</html> 
